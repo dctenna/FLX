@@ -1,0 +1,170 @@
+@media print {
+    section:not(:first-of-type) {
+        display: none;
+    }
+
+    .tm-sidebar, #about {
+        display: none;
+    }
+
+    .flex-2-col {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .flex-item h2 {
+        color: #0E1EFF;
+        text-align: left;
+    }
+
+    .flex-item {
+        max-width: 470px;
+    }
+
+    .tm-team-description-container {
+        max-width: 530px;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .flex-item img {
+        width: 55%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .tm-banner {
+        max-width: 620px;
+        padding-left: 80px;
+    }
+}
+
+.gallery-container li h2:hover {
+    color: #FFFFFF;
+    background-color: #87CEFA;
+}
+
+.flex-2-col {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    text-align: initial;
+}
+
+p:not(.tm-banner-text) {
+    text-indent: 20px;
+    line-height: 30px;
+}
+
+p::first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+.tm-main-nav, .tm-content-header, .flex-2-col:first-child, #about, .heading, .blocks, #ideas, section:last-of-type{
+    box-shadow: 1px 1px 4px 4px lightgrey;
+}
+
+.tm-banner {
+    background-color: #efefef;
+}
+
+.tm-banner-inner {
+    background-color: #FFFFFF;
+}
+
+#ideas .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+.heading .padding-medium ol li a {
+    color: #000000;
+}
+
+.heading .padding-medium ol li a:visited {
+    text-decoration: underline;
+}
+
+.heading .padding-medium ol li a:hover {
+    color: #87CEFA;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+.text::after {
+    content: "New";
+    color: #ff0000;
+    vertical-align: top;
+    font-size: 11px;
+}
+
+.boxes p:first-letter {
+    color: #000000;
+}
+
+.blocks .boxes, .blocks .box {
+    padding: 8px;
+}
+
+.blocks .boxes, .blocks .box p {
+    text-indent: 0;
+}
+
+.blocks .box:nth-child(even) {
+    background-color: #efefef ;
+}
+
+.mandatory-field::after {
+    content: "*";
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.tm-nav-item:hover {
+    background: #efefef;
+}
+
+.btn-primary {
+    background-color: #FFFFFF ;
+    color: #87CEFA;
+    border-color: #87CEFA;
+    border-radius: 0;
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #87CEFA ;
+    color: #FFFFFF;
+    border-color: #87CEFA;
+}
+
+form {
+    text-align: right;
+}
+
+@media screen {
+    section::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40px 250px 0 0;
+        border-color: #87CEFA transparent transparent transparent;
+    }
+}
+
