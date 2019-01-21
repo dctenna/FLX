@@ -150,7 +150,7 @@ h2 + p {
 .btn-primary:hover {
     background-color: #87CEFA ;
     color: #FFFFFF;
-    border-color: #87CEFA;
+    border: none;
 }
 
 form {
