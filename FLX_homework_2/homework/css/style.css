@@ -96,7 +96,7 @@ h2 + p {
     text-decoration: underline;
 }
 
-.padding-medium ol li a:hover {
+.heading .padding-medium ol li a:hover {
     color: #87CEFA;
     text-decoration: underline;
     text-decoration-style: double;
