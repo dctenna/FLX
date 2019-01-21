@@ -96,7 +96,7 @@ h2 + p {
     text-decoration: underline;
 }
 
-.heading .padding-medium ol li a:hover {
+.padding-medium ol li a:hover {
     color: #87CEFA;
     text-decoration: underline;
     text-decoration-style: double;
@@ -107,6 +107,7 @@ h2 + p {
     color: #ff0000;
     vertical-align: top;
     font-size: 11px;
+    display: inline-block;
 }
 
 .boxes p:first-letter {
