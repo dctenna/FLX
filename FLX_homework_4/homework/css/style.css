@@ -1,0 +1,297 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    max-width: 100vw;
+    background-color: #F3F3F3;
+}
+
+header {
+    background: url('../img/sample2.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #FFFFFF;
+    display: grid;
+}
+
+.top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.top-wrapper p {
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 17px;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 65%;
+}
+
+.login {
+    font-size: 70%;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin: 0;
+    font-size: 250%;
+}
+
+h1 span {
+    font-size: 180%;
+}
+
+header section p {
+    margin: 0;
+    text-align: center;
+    font-size: 70%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    font-size: 70%;
+    padding: 10px 65px;
+    border: 2px solid #FFFFFF;;
+    height: 9%;
+}
+
+.triangle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.triangle::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 180px 0;
+    border-color: transparent #000000 transparent transparent;
+    position: absolute;
+    z-index: -1;
+}
+
+.triangle-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.triangle-text-white {
+    color: #FFFFFF;
+    font-size: 70%;
+    width: 45%;
+    padding-top: 20px;
+    padding-right: 45px;
+    align-self: flex-end;
+}
+
+.triangle-text-black {
+    margin-left: 10%;
+    align-self: flex-start;
+    font-size: 80%;
+    width: 23%;
+    padding-top: 10px;
+}
+
+.before-articles {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.image-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.before-articles p {
+    text-align: center;
+    padding: 10px;
+    font-size: 120%;
+}
+
+.image-text div {
+    font-size: 70%;
+    width: 45%;
+}
+
+.text-before-articles p {
+    font-size: 100%;
+    padding: 20px;
+}
+
+.image {
+    background: url('../img/sample.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image .likes {
+    color: #FFFFFF;
+    align-self: flex-end;
+    margin-right: 10px;
+    border: 1px #FFFFFF solid;
+    margin-top: 18px;
+    padding: 2px 3px;
+    font-size: 98%;
+    width: 35px;
+}
+
+.image .date {
+    color: #FFFFFF;
+    align-self: flex-start;
+    font-size: 98%;
+}
+
+.articles {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.articles article {
+    margin: 30px 70px;
+    box-shadow: 0 2px 3px #9E9E9E;
+    text-align: center;
+    padding: 8px 25px;
+    font-size: 70%;
+    width: 50%;
+    max-width: 230px;
+}
+
+.post {
+    text-align: left;
+}
+
+article .btn-explore {
+    background-color: #097774;
+    border: none;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 108%;
+}
+
+.contacts, footer {
+    background-color: #FFFFFF;
+}
+
+.subscribe {
+    font-size: 80%;
+    padding: 30px 25px;
+}
+
+.subscribe form {
+    text-align: right;
+    font-size: 150%;
+}
+
+.subscribe p {
+    font-size: 90%;
+}
+
+input, #email {
+    border: solid thin #000000;
+    background-color: #F3F3F3;
+    padding: 6px;
+    margin-left: 15px;
+    width: 8%;
+}
+
+input:not(#email) {
+    width: 42%;
+}
+
+input::placeholder {
+    color: #000000;
+    background-color: #F3F3F3;
+    font-size: 83%;
+}
+
+.btn-subscribe {
+    padding: 9px;
+    background-color: #097774;
+    border: transparent;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 70px 35px;
+}
+
+.contacts article {
+    width: 95%;
+}
+
+.contacts article h5 {
+    font-size: 80%;
+    margin-bottom: 15px;
+}
+
+.contacts article p {
+    font-size: 70%;
+    color: #9E9E9E;
+}
+
+.contacts input {
+    margin: 0;
+}
+
+.text-hour {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-hour span {
+    color: #E8E8E8;
+    padding-top: 5px;
+}
+
+.address {
+    width: 50%;
+}
+
+.footer {
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid thin #F0F0F0;
+    background-color: #FFFFFF;
+    padding: 12px 0;
+}
+
+footer span {
+    color: #9E9E9E;
+    font-size: 70%;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 8px;
+    font-size: 70%;
+}
+
