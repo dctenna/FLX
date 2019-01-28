@@ -151,6 +151,7 @@ nav a {
     padding: 2px 3px;
     font-size: 98%;
     width: 35px;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .image .date {
