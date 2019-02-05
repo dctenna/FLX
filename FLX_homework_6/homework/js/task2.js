@@ -10,9 +10,9 @@ function calculatePriceWithDiscount() {
     || isNaN(discount)) {
     return 'Invalid input data';
   }
-  const priceWithDiscount = Math.round((amountOfMoney - (amountOfMoney * discount) / 100) * 100) / 100;
-  return `Price without discount: ${ Math.round( (amountOfMoney * 100) ) / 100 }
-Discount: ${ Math.round(discount * 100) / 100 }%
+  const priceWithDiscount = Math.floor((amountOfMoney - (amountOfMoney * discount) / 100) * 100) / 100;
+  return `Price without discount: ${ Math.floor( (amountOfMoney * 100) ) / 100 }
+Discount: ${ Math.floor(discount * 100) / 100 }%
 Price with discount: ${priceWithDiscount}`;
 }
 
