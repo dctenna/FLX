@@ -1,0 +1,88 @@
+#root {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+.wrapper-card {
+  width: 55vw;
+  text-align: center;
+  border: solid rgb(127, 127, 127) 1.5px;
+}
+
+.footer-image {
+  width: 5vw;
+}
+
+.input-with-button {
+  display: flex;
+  justify-content: center;
+}
+
+.input-field {
+  align-self: center;
+}
+
+#add-new-action-input {
+  width: 40vw;
+  margin-right: 0.5vw;
+  height: 21px;
+  border: solid 1.5px rgb(0, 0, 0);
+}
+
+#add-new-action-input::placeholder {
+  color: rgb(192, 192, 192);
+  font-size: 1.2vw;
+  padding-left: 0.5vw;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.input-with-button {
+  border: solid;
+  border-color:  transparent transparent black transparent;
+  margin: 1vw 4vw;
+  padding-bottom: 2vw;
+}
+
+.action-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3vw;
+}
+
+.action-item:hover {
+  cursor: grab;
+}
+
+.action-item:active {
+  cursor: grabbing;
+}
+
+.square-and-text {
+  display: flex;
+}
+
+.unchecked-square:hover,
+.delete:hover {
+  cursor: pointer;
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+#checked-square:hover {
+  cursor: default;
+}
+
+footer{
+  padding-top: 10vw;
+  padding-bottom: 1vw;
+}
