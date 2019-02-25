@@ -175,7 +175,7 @@ function setHashForMainPage(event) {
   event.preventDefault();
 }
 
-function saveAfterAdd() {
+function saveAfterAdd(event) {
   const newAction = document.getElementById('input-field').value;
 
   if (!newAction) {
