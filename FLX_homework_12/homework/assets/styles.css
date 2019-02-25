@@ -1,0 +1,45 @@
+#root {
+  text-align: center;
+}
+
+#input-field {
+  font-size: 20px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  padding: 7px;
+  width: 280px;
+}
+
+.empty-list {
+  font-size: 20px;
+}
+
+.button {
+  border-radius: 9px;
+  font-size: 23px;
+  padding: 2px 20px;
+}
+
+.buttons {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.action-list-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+}
+
+.square {
+  justify-self: flex-end;
+}
+
+.action-description {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+}
