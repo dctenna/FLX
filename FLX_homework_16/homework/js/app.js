@@ -20,6 +20,7 @@ const Bot = function (options) {
   this.x = options.x;
   this.y = options.y;
   this.speed = this.defaultSpeed;
+  this.className = 'Bot';
 };
 
 Bot.prototype.getSpeed = function () {
@@ -56,12 +57,13 @@ Bot.prototype.move = function (direction) {
   }
 };
 Bot.prototype.showPosition = function () {
-  console.log(`I am Bot '${this.name}'. I am located at ${this.x}:${this.y}`);
+  console.log(`I am ${this.className} '${this.name}'. I am located at ${this.x}:${this.y}`);
 };
 
 const Racebot = function (name, speed, x, y) {
   Bot.call(this, name, speed, x, y);
   this.previousMove = null;
+  this.className = 'Racebot';
 };
 
 Racebot.prototype = Object.create(Bot.prototype);
@@ -83,6 +85,7 @@ Racebot.prototype.move = function (direction) {
 const Speedbot = function (name, speed, x, y) {
   Bot.call(this, name, speed, x, y);
   this.isPreparedEngine = false;
+  this.className = 'Speedbot';
 };
 
 Speedbot.prototype = Object.create(Bot.prototype);
@@ -105,3 +108,4 @@ Speedbot.prototype.move = function (direction) {
     this.decrementSpeed();
   }
 };
+
