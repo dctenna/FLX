@@ -1,0 +1,270 @@
+body{
+  font-size: 20px;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.loader {
+  display: none;
+  z-index: 1;
+  position:absolute;
+  top: 45%;
+  left: 45%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.user-name {
+  grid-area: username;
+  align-self: center;
+  justify-self: center;
+}
+
+.user-name a {
+  text-decoration: none;
+}
+
+.user-name a:hover {
+  cursor: pointer;
+}
+
+.user-name a,
+.company-name span {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.avatars {
+  align-self: center;
+  grid-area: avatar;
+  justify-self: center;
+}
+
+.company-name {
+  grid-area: company;
+  justify-self: center;
+}
+
+.buttons-div {
+  grid-area: buttons;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 20px;
+  justify-self: center;
+}
+
+.button {
+  background-color: #555555;
+  color: white;
+  border: 2px solid #555555;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.address-title {
+  grid-area: address-title;
+  align-self: center;
+  justify-self: center;
+}
+
+.user-city {
+  grid-area: user-city;
+  border-bottom: solid 1px;
+}
+
+.user-street {
+  grid-area: user-street;
+  border-bottom: solid 1px;
+}
+
+.user-suite {
+  grid-area: user-suite;
+  border-bottom: solid 1px;
+}
+
+.user-zipcode {
+  grid-area: user-zipcode;
+  border-bottom: solid 1px;
+}
+
+.user-address {
+  display: grid;
+  grid-area: address;
+  grid-template-areas:
+  'address-title user-city'
+  'address-title user-street'
+  'address-title user-suite'
+  'address-title user-zipcode';
+  padding: 10px;
+}
+
+.user-card {
+  border: solid 2px #555555;
+  display: grid;
+  grid-template-areas:
+      'avatar address address buttons'
+      'avatar address address buttons'
+      'username company company buttons';
+  margin: 30px;
+  background-color: #f3f3f3;
+  padding: 30px;
+}
+
+.avatar-img {
+  max-width: 100%;
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+}
+
+.form {
+  margin: 30px;
+}
+
+.form div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form p {
+  flex: 1;
+}
+
+.form input {
+  flex: 2;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-author {
+  font-weight: bold;
+  grid-area: author;
+}
+
+.post-author-avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  grid-area: avatar;
+  align-self: center;
+}
+
+.posts-list {
+  grid-area: posts;
+}
+
+.posts-list,
+.comments-list {
+  list-style: none;
+}
+
+.comments-list {
+  padding-left: 0;
+  grid-area: comments;
+  margin-bottom: 30px;
+}
+
+.post-item {
+  display: grid;
+  grid-template-areas:
+      'avatar posts'
+      'avatar posts'
+      'author posts'
+      'none comments';
+  grid-column-gap: 20px;
+}
+
+.comment-avatar-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  grid-area: comment-avatar-img;
+}
+
+.email-comment-author {
+  grid-area: email;
+}
+
+.comment {
+  grid-area: comment;
+}
+
+.comment-item {
+  display: grid;
+  grid-template-areas:
+      'comment-avatar-img comment'
+      'comment-avatar-img comment'
+      'email comment';
+  grid-column-gap: 20px;
+  background-color: #f3f3f3;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  justify-self: flex-start;
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
