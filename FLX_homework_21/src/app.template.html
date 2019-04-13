@@ -1,0 +1,17 @@
+<div class="app">
+  <app-nav
+    user="$ctrl.user"
+    on-logout="$ctrl.logout($event);"
+    button-title="{{$ctrl.button}}">
+  </app-nav>
+  <ui-view>
+    <movies movies="$ctrl.movies"></movies>
+    <pagination current-page="$ctrl.currentPage"
+                desired-page="$ctrl.desiredPage"
+                previous-page="$ctrl.previousPage()"
+                next-page="$ctrl.nextPage()">
+
+    </pagination>
+    {{ $ctrl.desiredPage }}
+  </ui-view>
+</div>

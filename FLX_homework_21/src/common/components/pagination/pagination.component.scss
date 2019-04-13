@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  button {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(243, 243, 243)), color-stop(1, rgb(174, 178, 225)));
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .3), 0 0 2px rgba(0, 0, 0, .3);
+    color: black;
+    border-radius: 10px;
+    padding: 3px 15px;
+    width: 80px;
+    margin: 10px;
+    text-align: center;
+
+    &:hover {
+      border-radius: 10px;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(243, 243, 243)), color-stop(1, rgb(90, 92, 118)));
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .ng-binding {
+    align-self: center;
+  }
+}
